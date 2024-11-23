@@ -81,12 +81,13 @@
 
         <div class="field mt-3">
           <label for="phone" class="block">Teléfono:</label>
-          <InputText
+          <InputMask
             id="phone"
             v-model="currentContact.phone"
             class="w-full"
+            mask="9999-9999"
+            placeholder="####-####"
             required
-            type="tel"
           />
         </div>
 
